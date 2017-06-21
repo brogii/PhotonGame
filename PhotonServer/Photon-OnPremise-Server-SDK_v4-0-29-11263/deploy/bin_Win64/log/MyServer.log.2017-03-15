@@ -1,0 +1,10 @@
+2017-03-15 10:22:16,686 [17] INFO  MyServer.MyServer - 服务器启动
+2017-03-15 10:22:16,701 [17] INFO  Photon.SocketServer.ApplicationBase - Application start: AppId=MyServer; AppPath=E:\PhotonServer\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\MyServer, Type=MyServer.MyServer 
+2017-03-15 10:22:20,582 [17] INFO  Photon.SocketServer.ApplicationBase - Application is stopping: AppId=MyServer
+2017-03-15 10:22:20,584 [17] INFO  MyServer.MyServer - 服务器关闭
+2017-03-15 10:22:20,584 [17] INFO  Photon.SocketServer.ApplicationBase - Application stop: AppId=MyServer
+2017-03-15 10:22:44,684 [1] INFO  Photon.SocketServer.ApplicationBase - Application is stopping: AppId=MyServer
+2017-03-15 10:22:44,700 [1] INFO  MyServer.MyServer - 服务器关闭
+2017-03-15 10:22:44,700 [1] INFO  Photon.SocketServer.ApplicationBase - Application stop: AppId=MyServer
+2017-03-15 10:22:52,113 [1] INFO  MyServer.MyServer - 服务器启动
+2017-03-15 10:22:52,113 [1] INFO  Photon.SocketServer.ApplicationBase - Application start: AppId=MyServer; AppPath=E:\PhotonServer\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\MyServer, Type=MyServer.MyServer 

@@ -1,0 +1,139 @@
+3760: 08:59:08.403 - ---
+3760: 08:59:08.403 - Service: "Photon Socket Server" starting
+3760: 08:59:08.403 - Config File: E:\PhotonServer\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonServer.config
+3760: 08:59:08.403 - Will produce at most: 10 crash dumps
+3760: 08:59:08.403 - Action: run as service
+3824: 08:59:08.403 - Server Starting...
+3824: 08:59:08.403 -    Tick count: 51230 (wraps in: 49.7097 days)
+3824: 08:59:08.403 - Tick count 64: 51230
+3824: 08:59:08.403 - Photon Version: 4.0.28.2962
+3824: 08:59:08.403 - PID: 3752
+3824: 08:59:08.403 - Current directory is: C:\Windows\system32
+3824: 08:59:08.403 - Changing current directory to: E:\PhotonServer\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64
+3824: 08:59:08.403 - Config File: E:\PhotonServer\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\bin_Win64\PhotonServer.config
+3824: 08:59:08.403 - Will NOT log unimportant exceptions
+3824: 08:59:08.543 - Not using performance counters as they are not currently installed. Run the service with /InstallCounters to install them.
+3824: 08:59:08.543 - Shutdown timeout enabled: 30000ms
+3824: 08:59:08.543 - Starting I/O thread pool with 2 threads
+3824: 08:59:08.543 - Using Standard allocator
+3824: 08:59:08.543 - Max message size: 512000
+3824: 08:59:08.543 - Starting business logic thread pool with the following settings
+3824: 08:59:08.543 - InitialThreads: 4 threads
+3824: 08:59:08.543 - MinThreads: 4 threads
+3824: 08:59:08.543 - Thread pool is fixed size
+3824: 08:59:08.559 - Starting ENet thread pool with the following settings
+3824: 08:59:08.559 - InitialThreads: 2 threads
+3824: 08:59:08.559 - MinThreads: 2 threads
+3824: 08:59:08.559 - Thread pool is fixed size
+3824: 08:59:08.559 - OnlyDispatchTimers: False
+3824: 08:59:08.559 - S2S: flow control: Max pending writes: 50
+3824: 08:59:08.559 - S2S: flow control: Max queued buffers: 200
+3824: 08:59:08.559 - S2S: flow control: Max pending writes MUX: 500
+3824: 08:59:08.559 - S2S: flow control: Max queued buffers MUX: 2000
+3824: 08:59:08.559 - S2S: MaxInboundMessageSize: 512000
+3824: 08:59:08.559 - S2S: MaxOutboundMessageSize: 512000
+3824: 08:59:08.559 - S2S: No inactivity timeout
+3824: 08:59:08.575 - WebSocket S2S: MaxInboundMessageSize: 512000
+3824: 08:59:08.575 - WebSocket S2S: MaxOutboundMessageSize: 512000
+3824: 08:59:08.575 - WebSocket S2S: No inactivity timeout
+3824: 08:59:08.575 - Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+3824: 08:59:08.575 - Per peer bandwidth limit
+3824: 08:59:08.575 - Transmit Rate Limit: 256 KB/Sec
+3824: 08:59:08.575 - Limit period: 200ms
+3824: 08:59:08.575 - Limit per period: 52428 bytes
+3824: 08:59:08.575 - Max queued data for transmission per peer: 512000 bytes
+3824: 08:59:08.575 - Minimum retransmit timeout: 200
+3824: 08:59:08.575 - No Maximum retransmit timeout
+3824: 08:59:08.575 - Minimum ENet timeout: 5000ms
+3824: 08:59:08.575 - Maximum ENet timeout: 30000ms
+3824: 08:59:08.575 - Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+3824: 08:59:08.575 - No RTT ACK adjustment timeout
+3824: 08:59:08.575 - Outbound ENet: MaxInboundMessageSize: 512000
+3824: 08:59:08.575 - Outbound ENet: MaxOutboundMessageSize: 512000
+3824: 08:59:08.762 - GetRuntime - About to load CLR - versions available:
+3824: 08:59:08.762 - v2.0.50727
+3824: 08:59:08.762 - v4.0.30319
+3824: 08:59:08.762 - Configuration requests: "v2.0.50727"
+3824: 08:59:08.762 - About to load version: "v2.0.50727"
+3824: 08:59:09.214 - About to load runtime: PhotonHostRuntime.PhotonDomainManager from PhotonHostRuntime, Culture=neutral, PublicKeyToken=02C301B61B060C4D
+3824: 08:59:09.214 - CLRBaseDirectory set to "E:\PhotonServer\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy"
+3824: 08:59:09.214 - Optimising event broadcast for 20 or more peers
+3824: 08:59:09.355 - Start: About to load CLR - versions available:
+3824: 08:59:09.355 - v2.0.50727
+3824: 08:59:09.355 - v4.0.30319
+3824: 08:59:09.355 - No preference in configuration file, will load latest.
+3824: 08:59:09.355 - About to load version: "v4.0.30319"
+3824: 08:59:09.355 - Loaded version: "v4.0.30319"
+3824: 08:59:10.384 - Photon host runtime loaded
+3824: 08:59:36.218 - LICENSE: No license file was found. Starting with Bootstrap License.
+3824: 08:59:36.218 - License is valid.
+3824: 08:59:36.218 - Licensed for 20 concurrent connections.
+3824: 08:59:36.218 - ENet: Max Reliable Data In Transit (awaiting ACKs) per peer : 51200 bytes
+3824: 08:59:36.218 - ENet: Per peer bandwidth limit
+3824: 08:59:36.218 - ENet: Transmit Rate Limit: 256 KB/Sec
+3824: 08:59:36.218 - ENet: Limit period: 200ms
+3824: 08:59:36.218 - ENet: Limit per period: 52428 bytes
+3824: 08:59:36.218 - ENet: Max queued data for transmission per peer: 512000 bytes
+3824: 08:59:36.218 - ENet: Minimum retransmit timeout: 200
+3824: 08:59:36.218 - No Maximum retransmit timeout
+3824: 08:59:36.218 - ENet: Minimum timeout: 5000ms
+3824: 08:59:36.218 - ENet: Maximum timeout: 30000ms
+3824: 08:59:36.218 - ENet: Max Inbound Reliable Data Queued (awaiting resends of earlier sequence numbers) per peer : 163840 bytes
+3824: 08:59:36.218 - No RTT ACK adjustment timeout
+3824: 08:59:36.218 - About to load application: MMoDemo from Photon.MmoDemo.Server
+3824: 08:59:36.218 - Auto restart is enabled for application, existing connections will be terminated during restart
+3824: 08:59:36.218 - Application will restart 1000ms after the last change detected
+3824: 08:59:36.218 - Application will restart if files matching the following are changed: "dll;config"
+3824: 08:59:36.218 - Application will NOT restart if files matching the following are changed: "log4net.config"
+3824: 08:59:36.374 - CService::OnException() - Exception: CManagedHost::CreateApplicationInNewAppDomain() - Failed to create new application domain for : "MMoDemo" - Can't find Photon.MmoDemo.Server.dll in  or E:\PhotonServer\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\MmoDemo\bin
+3824: 08:59:36.374 - Server shutting down...
+3824: 08:59:36.374 - Shutdown monitoring enabled, 30000ms before process abort
+3824: 08:59:36.374 - Notifying CLR applications of shutdown...
+3824: 08:59:36.374 - RequestStop: defalt app domain
+3824: 08:59:36.374 - Shutting down WebSocket Outbound Connection Manager...
+3824: 08:59:36.623 - Shutting down TCP Outbound Connection Manager...
+3824: 08:59:36.623 - Shutting down ENet Outbound Connection Manager...
+3824: 08:59:36.623 - Disconnecting all outbound peers...
+3824: 08:59:38.324 - Shutting down ENet host...
+3824: 08:59:38.324 - Disconnecting all peers...
+3824: 08:59:38.339 - Shutting down socket servers...
+3824: 08:59:38.355 - Shutting down ENet thread pool...
+3824: 08:59:38.355 - Shutting down TCP inactivity timers...
+3824: 08:59:38.355 - Shutting down CLR applications...
+3824: 08:59:38.355 - Shutting down business logic thread pool...
+3824: 08:59:38.355 - Shutting down I/O thread pool...
+3824: 08:59:38.355 - Destroying servers
+3824: 08:59:38.355 - Destroying WebSocket Outbound Connection Manager
+3824: 08:59:38.355 - Destroying TCP Outbound Connection Manager
+3824: 08:59:38.355 - Destroying TCP inactivity timer
+3824: 08:59:38.355 - Destroying ENet timer wheel
+3824: 08:59:38.355 - Destroying ENet host
+3824: 08:59:38.355 - Destroying ENet outbound host
+3824: 08:59:38.355 - Destroying HTTP inactivity timer
+3824: 08:59:38.355 - Destroying HTTP host
+3824: 08:59:38.355 - Destroying HTTP Chunk host
+3824: 08:59:38.355 - Flushing ENET buffer allocator...
+3824: 08:59:38.355 - Flushing TCP buffer handle allocator...
+3824: 08:59:38.355 - Flushing stream socket allocator...
+3824: 08:59:38.355 - Flushing inbound datagram socket allocator...
+3824: 08:59:38.355 - Flushing outbound datagram socket allocator...
+3824: 08:59:38.355 - Destroying CLR dispatcher
+3824: 08:59:38.355 - Destroying CLR applications
+3824: 08:59:39.775 - ~CCLRApplicationCollection() - Waiting up to 10 seconds for the CLR to release all of our objects
+3824: 08:59:39.775 - ~CCLRApplicationCollection() - Done. All objects released
+3824: 08:59:39.775 - ~CManagedHost() - Release default app domain
+3824: 08:59:39.775 - CManagedHost::OnDomainUnload() - 1
+3824: 08:59:39.775 - ~CManagedHost() - Waiting up to 10 seconds for CLR shutdown...
+3824: 08:59:39.775 - ~CManagedHost
+3824: 08:59:39.775 - Destroying ENet thread pool
+3824: 08:59:39.775 - Destroying Business logic thread pool
+3824: 08:59:39.775 - Destroying I/O thread pool
+3824: 08:59:39.775 - Destroying ENet buffer allocator
+3824: 08:59:39.775 - Destroying TCP buffer allocator
+3824: 08:59:39.775 - Destroying TCP socket allocator
+3824: 08:59:39.775 - Destroying ENet inbound socket allocator
+3824: 08:59:39.775 - Destroying ENet outbound socket allocator
+3824: 08:59:39.775 - Destroying shared datagram flow control data
+3824: 08:59:40.149 - Shutdown complete...
+3760: 08:59:40.430 - Service shutting down
+3760: 08:59:40.430 - Service shut down complete

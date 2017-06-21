@@ -1,0 +1,714 @@
+2017-03-31 13:44:30,007 [68] INFO  MyServer.MyServer - 一个连接
+2017-03-31 13:44:32,794 [64] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 13:44:35,416 [64] WARN  NHibernate.Util.ADOExceptionReporter - MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.AdoNet.ConnectionManager.GetConnection()
+   在 NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+2017-03-31 13:44:35,767 [64] ERROR NHibernate.Util.ADOExceptionReporter - Unable to connect to any of the specified MySQL hosts.
+2017-03-31 13:44:35,899 [64] WARN  NHibernate.Util.ADOExceptionReporter - MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.AdoNet.ConnectionManager.GetConnection()
+   在 NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+2017-03-31 13:44:35,900 [64] ERROR NHibernate.Util.ADOExceptionReporter - Unable to connect to any of the specified MySQL hosts.
+2017-03-31 13:44:35,907 [64] WARN  NHibernate.Util.ADOExceptionReporter - MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.AdoNet.ConnectionManager.GetConnection()
+   在 NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+2017-03-31 13:44:35,907 [64] ERROR NHibernate.Util.ADOExceptionReporter - Unable to connect to any of the specified MySQL hosts.
+2017-03-31 13:44:36,065 [64] ERROR Photon.SocketServer.PeerBase - exception during handling of data.Peer:T:MyClientPeer,ConnId:3,ip:127.0.0.1:49338, Data: F3-02-00-00-02-00-73-00-03-61-61-61-01-73-00-03-61-61-61,
+Exception:NHibernate.Exceptions.GenericADOException: could not execute query
+[ SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ? and this_.password = ? ]
+  Name:cp0 - Value:aaa  Name:cp1 - Value:aaa
+[SQL: SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ? and this_.password = ?] ---> MySql.Data.MySqlClient.MySqlException: Unable to connect to any of the specified MySQL hosts.
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.AdoNet.ConnectionManager.GetConnection()
+   在 NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   在 NHibernate.Impl.CriteriaImpl.List(IList results)
+   在 NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   在 MyServer.Manager.UserManager.VerifyUser(String username, String password) 位置 E:\VSproject\PhotonServer服务端使用\MyServer\Manager\UserManager.cs:行号 90
+   在 MyServer.Handler.LoginHandler.OnOperationRequest(OperationRequest operationRequest, SendParameters sendParameters, MyClientPeer peer) 位置 E:\VSproject\PhotonServer服务端使用\MyServer\Handler\LoginHandler.cs:行号 24
+   在 MyServer.MyClientPeer.OnOperationRequest(OperationRequest operationRequest, SendParameters sendParameters) 位置 E:\VSproject\PhotonServer服务端使用\MyServer\MyClientPeer.cs:行号 51
+   在 Photon.SocketServer.PeerBase.OnReceive(Byte[] data, SendParameters sendParameters) 位置 h:\svncontent\photon-socketserver-sdk_cloud\src\Photon.SocketServer\PeerBase.cs:行号 1244
+   在 Photon.SocketServer.PeerBase.OnReceiveInternal(Byte[] data, SendParameters sendParameters, Int32 rtt, Int32 rttVariance, Int32 numFailures) 位置 h:\svncontent\photon-socketserver-sdk_cloud\src\Photon.SocketServer\PeerBase.cs:行号 988
+2017-03-31 13:44:36,409 [61] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 13:44:38,416 [61] WARN  NHibernate.Util.ADOExceptionReporter - MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.AdoNet.ConnectionManager.GetConnection()
+   在 NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+2017-03-31 13:44:38,416 [61] ERROR NHibernate.Util.ADOExceptionReporter - Unable to connect to any of the specified MySQL hosts.
+2017-03-31 13:44:38,417 [61] WARN  NHibernate.Util.ADOExceptionReporter - MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.AdoNet.ConnectionManager.GetConnection()
+   在 NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+2017-03-31 13:44:38,417 [61] ERROR NHibernate.Util.ADOExceptionReporter - Unable to connect to any of the specified MySQL hosts.
+2017-03-31 13:44:38,417 [61] WARN  NHibernate.Util.ADOExceptionReporter - MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.AdoNet.ConnectionManager.GetConnection()
+   在 NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+2017-03-31 13:44:38,417 [61] ERROR NHibernate.Util.ADOExceptionReporter - Unable to connect to any of the specified MySQL hosts.
+2017-03-31 13:44:38,418 [61] ERROR Photon.SocketServer.PeerBase - exception during handling of data.Peer:T:MyClientPeer,ConnId:3,ip:127.0.0.1:0, Data: F3-02-00-00-02-00-73-00-03-61-61-61-01-73-00-03-61-61-61,
+Exception:NHibernate.Exceptions.GenericADOException: could not execute query
+[ SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ? and this_.password = ? ]
+  Name:cp0 - Value:aaa  Name:cp1 - Value:aaa
+[SQL: SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ? and this_.password = ?] ---> MySql.Data.MySqlClient.MySqlException: Unable to connect to any of the specified MySQL hosts.
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.AdoNet.ConnectionManager.GetConnection()
+   在 NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   在 NHibernate.Impl.CriteriaImpl.List(IList results)
+   在 NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   在 MyServer.Manager.UserManager.VerifyUser(String username, String password) 位置 E:\VSproject\PhotonServer服务端使用\MyServer\Manager\UserManager.cs:行号 90
+   在 MyServer.Handler.LoginHandler.OnOperationRequest(OperationRequest operationRequest, SendParameters sendParameters, MyClientPeer peer) 位置 E:\VSproject\PhotonServer服务端使用\MyServer\Handler\LoginHandler.cs:行号 24
+   在 MyServer.MyClientPeer.OnOperationRequest(OperationRequest operationRequest, SendParameters sendParameters) 位置 E:\VSproject\PhotonServer服务端使用\MyServer\MyClientPeer.cs:行号 51
+   在 Photon.SocketServer.PeerBase.OnReceive(Byte[] data, SendParameters sendParameters) 位置 h:\svncontent\photon-socketserver-sdk_cloud\src\Photon.SocketServer\PeerBase.cs:行号 1244
+   在 Photon.SocketServer.PeerBase.OnReceiveInternal(Byte[] data, SendParameters sendParameters, Int32 rtt, Int32 rttVariance, Int32 numFailures) 位置 h:\svncontent\photon-socketserver-sdk_cloud\src\Photon.SocketServer\PeerBase.cs:行号 988
+2017-03-31 13:44:38,434 [61] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 13:44:40,437 [61] WARN  NHibernate.Util.ADOExceptionReporter - MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.AdoNet.ConnectionManager.GetConnection()
+   在 NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+2017-03-31 13:44:40,437 [61] ERROR NHibernate.Util.ADOExceptionReporter - Unable to connect to any of the specified MySQL hosts.
+2017-03-31 13:44:40,437 [61] WARN  NHibernate.Util.ADOExceptionReporter - MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.AdoNet.ConnectionManager.GetConnection()
+   在 NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+2017-03-31 13:44:40,438 [61] ERROR NHibernate.Util.ADOExceptionReporter - Unable to connect to any of the specified MySQL hosts.
+2017-03-31 13:44:40,438 [61] WARN  NHibernate.Util.ADOExceptionReporter - MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.AdoNet.ConnectionManager.GetConnection()
+   在 NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+2017-03-31 13:44:40,438 [61] ERROR NHibernate.Util.ADOExceptionReporter - Unable to connect to any of the specified MySQL hosts.
+2017-03-31 13:44:40,438 [61] ERROR Photon.SocketServer.PeerBase - exception during handling of data.Peer:T:MyClientPeer,ConnId:3,ip:127.0.0.1:0, Data: F3-02-00-00-02-00-73-00-03-61-61-61-01-73-00-03-61-61-61,
+Exception:NHibernate.Exceptions.GenericADOException: could not execute query
+[ SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ? and this_.password = ? ]
+  Name:cp0 - Value:aaa  Name:cp1 - Value:aaa
+[SQL: SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ? and this_.password = ?] ---> MySql.Data.MySqlClient.MySqlException: Unable to connect to any of the specified MySQL hosts.
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.AdoNet.ConnectionManager.GetConnection()
+   在 NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   在 NHibernate.Impl.CriteriaImpl.List(IList results)
+   在 NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   在 MyServer.Manager.UserManager.VerifyUser(String username, String password) 位置 E:\VSproject\PhotonServer服务端使用\MyServer\Manager\UserManager.cs:行号 90
+   在 MyServer.Handler.LoginHandler.OnOperationRequest(OperationRequest operationRequest, SendParameters sendParameters, MyClientPeer peer) 位置 E:\VSproject\PhotonServer服务端使用\MyServer\Handler\LoginHandler.cs:行号 24
+   在 MyServer.MyClientPeer.OnOperationRequest(OperationRequest operationRequest, SendParameters sendParameters) 位置 E:\VSproject\PhotonServer服务端使用\MyServer\MyClientPeer.cs:行号 51
+   在 Photon.SocketServer.PeerBase.OnReceive(Byte[] data, SendParameters sendParameters) 位置 h:\svncontent\photon-socketserver-sdk_cloud\src\Photon.SocketServer\PeerBase.cs:行号 1244
+   在 Photon.SocketServer.PeerBase.OnReceiveInternal(Byte[] data, SendParameters sendParameters, Int32 rtt, Int32 rttVariance, Int32 numFailures) 位置 h:\svncontent\photon-socketserver-sdk_cloud\src\Photon.SocketServer\PeerBase.cs:行号 988
+2017-03-31 13:44:40,440 [61] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 13:44:42,440 [61] WARN  NHibernate.Util.ADOExceptionReporter - MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.AdoNet.ConnectionManager.GetConnection()
+   在 NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+2017-03-31 13:44:42,440 [61] ERROR NHibernate.Util.ADOExceptionReporter - Unable to connect to any of the specified MySQL hosts.
+2017-03-31 13:44:42,440 [61] WARN  NHibernate.Util.ADOExceptionReporter - MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.AdoNet.ConnectionManager.GetConnection()
+   在 NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+2017-03-31 13:44:42,440 [61] ERROR NHibernate.Util.ADOExceptionReporter - Unable to connect to any of the specified MySQL hosts.
+2017-03-31 13:44:42,440 [61] WARN  NHibernate.Util.ADOExceptionReporter - MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.AdoNet.ConnectionManager.GetConnection()
+   在 NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+2017-03-31 13:44:42,440 [61] ERROR NHibernate.Util.ADOExceptionReporter - Unable to connect to any of the specified MySQL hosts.
+2017-03-31 13:44:42,440 [61] ERROR Photon.SocketServer.PeerBase - exception during handling of data.Peer:T:MyClientPeer,ConnId:3,ip:127.0.0.1:0, Data: F3-02-00-00-02-00-73-00-03-61-61-61-01-73-00-03-61-61-61,
+Exception:NHibernate.Exceptions.GenericADOException: could not execute query
+[ SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ? and this_.password = ? ]
+  Name:cp0 - Value:aaa  Name:cp1 - Value:aaa
+[SQL: SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ? and this_.password = ?] ---> MySql.Data.MySqlClient.MySqlException: Unable to connect to any of the specified MySQL hosts.
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.AdoNet.ConnectionManager.GetConnection()
+   在 NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   在 NHibernate.Impl.CriteriaImpl.List(IList results)
+   在 NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   在 MyServer.Manager.UserManager.VerifyUser(String username, String password) 位置 E:\VSproject\PhotonServer服务端使用\MyServer\Manager\UserManager.cs:行号 90
+   在 MyServer.Handler.LoginHandler.OnOperationRequest(OperationRequest operationRequest, SendParameters sendParameters, MyClientPeer peer) 位置 E:\VSproject\PhotonServer服务端使用\MyServer\Handler\LoginHandler.cs:行号 24
+   在 MyServer.MyClientPeer.OnOperationRequest(OperationRequest operationRequest, SendParameters sendParameters) 位置 E:\VSproject\PhotonServer服务端使用\MyServer\MyClientPeer.cs:行号 51
+   在 Photon.SocketServer.PeerBase.OnReceive(Byte[] data, SendParameters sendParameters) 位置 h:\svncontent\photon-socketserver-sdk_cloud\src\Photon.SocketServer\PeerBase.cs:行号 1244
+   在 Photon.SocketServer.PeerBase.OnReceiveInternal(Byte[] data, SendParameters sendParameters, Int32 rtt, Int32 rttVariance, Int32 numFailures) 位置 h:\svncontent\photon-socketserver-sdk_cloud\src\Photon.SocketServer\PeerBase.cs:行号 988
+2017-03-31 13:44:42,441 [61] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 13:44:44,458 [61] WARN  NHibernate.Util.ADOExceptionReporter - MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.AdoNet.ConnectionManager.GetConnection()
+   在 NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+2017-03-31 13:44:44,458 [61] ERROR NHibernate.Util.ADOExceptionReporter - Unable to connect to any of the specified MySQL hosts.
+2017-03-31 13:44:44,459 [61] WARN  NHibernate.Util.ADOExceptionReporter - MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.AdoNet.ConnectionManager.GetConnection()
+   在 NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+2017-03-31 13:44:44,459 [61] ERROR NHibernate.Util.ADOExceptionReporter - Unable to connect to any of the specified MySQL hosts.
+2017-03-31 13:44:44,459 [61] WARN  NHibernate.Util.ADOExceptionReporter - MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.AdoNet.ConnectionManager.GetConnection()
+   在 NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+2017-03-31 13:44:44,459 [61] ERROR NHibernate.Util.ADOExceptionReporter - Unable to connect to any of the specified MySQL hosts.
+2017-03-31 13:44:44,459 [61] ERROR Photon.SocketServer.PeerBase - exception during handling of data.Peer:T:MyClientPeer,ConnId:3,ip:127.0.0.1:0, Data: F3-02-00-00-02-00-73-00-03-61-61-61-01-73-00-03-61-61-61,
+Exception:NHibernate.Exceptions.GenericADOException: could not execute query
+[ SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ? and this_.password = ? ]
+  Name:cp0 - Value:aaa  Name:cp1 - Value:aaa
+[SQL: SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ? and this_.password = ?] ---> MySql.Data.MySqlClient.MySqlException: Unable to connect to any of the specified MySQL hosts.
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.AdoNet.ConnectionManager.GetConnection()
+   在 NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   在 NHibernate.Impl.CriteriaImpl.List(IList results)
+   在 NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   在 MyServer.Manager.UserManager.VerifyUser(String username, String password) 位置 E:\VSproject\PhotonServer服务端使用\MyServer\Manager\UserManager.cs:行号 90
+   在 MyServer.Handler.LoginHandler.OnOperationRequest(OperationRequest operationRequest, SendParameters sendParameters, MyClientPeer peer) 位置 E:\VSproject\PhotonServer服务端使用\MyServer\Handler\LoginHandler.cs:行号 24
+   在 MyServer.MyClientPeer.OnOperationRequest(OperationRequest operationRequest, SendParameters sendParameters) 位置 E:\VSproject\PhotonServer服务端使用\MyServer\MyClientPeer.cs:行号 51
+   在 Photon.SocketServer.PeerBase.OnReceive(Byte[] data, SendParameters sendParameters) 位置 h:\svncontent\photon-socketserver-sdk_cloud\src\Photon.SocketServer\PeerBase.cs:行号 1244
+   在 Photon.SocketServer.PeerBase.OnReceiveInternal(Byte[] data, SendParameters sendParameters, Int32 rtt, Int32 rttVariance, Int32 numFailures) 位置 h:\svncontent\photon-socketserver-sdk_cloud\src\Photon.SocketServer\PeerBase.cs:行号 988
+2017-03-31 13:44:44,460 [61] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 13:44:46,476 [61] WARN  NHibernate.Util.ADOExceptionReporter - MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.AdoNet.ConnectionManager.GetConnection()
+   在 NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+2017-03-31 13:44:46,476 [61] ERROR NHibernate.Util.ADOExceptionReporter - Unable to connect to any of the specified MySQL hosts.
+2017-03-31 13:44:46,476 [61] WARN  NHibernate.Util.ADOExceptionReporter - MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.AdoNet.ConnectionManager.GetConnection()
+   在 NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+2017-03-31 13:44:46,476 [61] ERROR NHibernate.Util.ADOExceptionReporter - Unable to connect to any of the specified MySQL hosts.
+2017-03-31 13:44:46,476 [61] WARN  NHibernate.Util.ADOExceptionReporter - MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.AdoNet.ConnectionManager.GetConnection()
+   在 NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+2017-03-31 13:44:46,476 [61] ERROR NHibernate.Util.ADOExceptionReporter - Unable to connect to any of the specified MySQL hosts.
+2017-03-31 13:44:46,477 [61] ERROR Photon.SocketServer.PeerBase - exception during handling of data.Peer:T:MyClientPeer,ConnId:3,ip:127.0.0.1:0, Data: F3-02-00-00-02-00-73-00-03-61-61-61-01-73-00-03-61-61-61,
+Exception:NHibernate.Exceptions.GenericADOException: could not execute query
+[ SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ? and this_.password = ? ]
+  Name:cp0 - Value:aaa  Name:cp1 - Value:aaa
+[SQL: SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ? and this_.password = ?] ---> MySql.Data.MySqlClient.MySqlException: Unable to connect to any of the specified MySQL hosts.
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.AdoNet.ConnectionManager.GetConnection()
+   在 NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   在 NHibernate.Impl.CriteriaImpl.List(IList results)
+   在 NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   在 MyServer.Manager.UserManager.VerifyUser(String username, String password) 位置 E:\VSproject\PhotonServer服务端使用\MyServer\Manager\UserManager.cs:行号 90
+   在 MyServer.Handler.LoginHandler.OnOperationRequest(OperationRequest operationRequest, SendParameters sendParameters, MyClientPeer peer) 位置 E:\VSproject\PhotonServer服务端使用\MyServer\Handler\LoginHandler.cs:行号 24
+   在 MyServer.MyClientPeer.OnOperationRequest(OperationRequest operationRequest, SendParameters sendParameters) 位置 E:\VSproject\PhotonServer服务端使用\MyServer\MyClientPeer.cs:行号 51
+   在 Photon.SocketServer.PeerBase.OnReceive(Byte[] data, SendParameters sendParameters) 位置 h:\svncontent\photon-socketserver-sdk_cloud\src\Photon.SocketServer\PeerBase.cs:行号 1244
+   在 Photon.SocketServer.PeerBase.OnReceiveInternal(Byte[] data, SendParameters sendParameters, Int32 rtt, Int32 rttVariance, Int32 numFailures) 位置 h:\svncontent\photon-socketserver-sdk_cloud\src\Photon.SocketServer\PeerBase.cs:行号 988
+2017-03-31 13:44:46,623 [61] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 13:44:48,639 [61] WARN  NHibernate.Util.ADOExceptionReporter - MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.AdoNet.ConnectionManager.GetConnection()
+   在 NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+2017-03-31 13:44:48,639 [61] ERROR NHibernate.Util.ADOExceptionReporter - Unable to connect to any of the specified MySQL hosts.
+2017-03-31 13:44:48,639 [61] WARN  NHibernate.Util.ADOExceptionReporter - MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.AdoNet.ConnectionManager.GetConnection()
+   在 NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+2017-03-31 13:44:48,639 [61] ERROR NHibernate.Util.ADOExceptionReporter - Unable to connect to any of the specified MySQL hosts.
+2017-03-31 13:44:48,639 [61] WARN  NHibernate.Util.ADOExceptionReporter - MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.AdoNet.ConnectionManager.GetConnection()
+   在 NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+2017-03-31 13:44:48,639 [61] ERROR NHibernate.Util.ADOExceptionReporter - Unable to connect to any of the specified MySQL hosts.
+2017-03-31 13:44:48,639 [61] ERROR Photon.SocketServer.PeerBase - exception during handling of data.Peer:T:MyClientPeer,ConnId:3,ip:127.0.0.1:0, Data: F3-02-00-00-02-00-73-00-03-61-61-61-01-73-00-03-61-61-61,
+Exception:NHibernate.Exceptions.GenericADOException: could not execute query
+[ SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ? and this_.password = ? ]
+  Name:cp0 - Value:aaa  Name:cp1 - Value:aaa
+[SQL: SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ? and this_.password = ?] ---> MySql.Data.MySqlClient.MySqlException: Unable to connect to any of the specified MySQL hosts.
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.AdoNet.ConnectionManager.GetConnection()
+   在 NHibernate.AdoNet.AbstractBatcher.Prepare(IDbCommand cmd)
+   在 NHibernate.AdoNet.AbstractBatcher.ExecuteReader(IDbCommand cmd)
+   在 NHibernate.Loader.Loader.GetResultSet(IDbCommand st, Boolean autoDiscoverTypes, Boolean callable, RowSelection selection, ISessionImplementor session)
+   在 NHibernate.Loader.Loader.DoQuery(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoQueryAndInitializeNonLazyCollections(ISessionImplementor session, QueryParameters queryParameters, Boolean returnProxies, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 NHibernate.Loader.Loader.DoList(ISessionImplementor session, QueryParameters queryParameters, IResultTransformer forcedResultTransformer)
+   在 NHibernate.Loader.Loader.ListIgnoreQueryCache(ISessionImplementor session, QueryParameters queryParameters)
+   在 NHibernate.Impl.SessionImpl.List(CriteriaImpl criteria, IList results)
+   在 NHibernate.Impl.CriteriaImpl.List(IList results)
+   在 NHibernate.Impl.CriteriaImpl.UniqueResult[T]()
+   在 MyServer.Manager.UserManager.VerifyUser(String username, String password) 位置 E:\VSproject\PhotonServer服务端使用\MyServer\Manager\UserManager.cs:行号 90
+   在 MyServer.Handler.LoginHandler.OnOperationRequest(OperationRequest operationRequest, SendParameters sendParameters, MyClientPeer peer) 位置 E:\VSproject\PhotonServer服务端使用\MyServer\Handler\LoginHandler.cs:行号 24
+   在 MyServer.MyClientPeer.OnOperationRequest(OperationRequest operationRequest, SendParameters sendParameters) 位置 E:\VSproject\PhotonServer服务端使用\MyServer\MyClientPeer.cs:行号 51
+   在 Photon.SocketServer.PeerBase.OnReceive(Byte[] data, SendParameters sendParameters) 位置 h:\svncontent\photon-socketserver-sdk_cloud\src\Photon.SocketServer\PeerBase.cs:行号 1244
+   在 Photon.SocketServer.PeerBase.OnReceiveInternal(Byte[] data, SendParameters sendParameters, Int32 rtt, Int32 rttVariance, Int32 numFailures) 位置 h:\svncontent\photon-socketserver-sdk_cloud\src\Photon.SocketServer\PeerBase.cs:行号 988
+2017-03-31 13:46:02,473 [57] INFO  MyServer.MyServer - 一个连接
+2017-03-31 13:46:04,540 [64] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 13:46:42,325 [68] INFO  MyServer.MyServer - 一个连接
+2017-03-31 13:46:45,682 [57] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 14:06:58,734 [68] INFO  MyServer.MyServer - 一个连接
+2017-03-31 14:07:02,177 [62] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 14:07:17,662 [57] INFO  MyServer.MyServer - 一个连接
+2017-03-31 14:07:19,882 [61] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 14:08:30,965 [62] INFO  MyServer.MyServer - 一个连接
+2017-03-31 14:08:33,488 [67] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 14:09:29,158 [61] INFO  MyServer.MyServer - 一个连接
+2017-03-31 14:09:29,987 [68] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 14:09:32,519 [64] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 14:11:21,182 [57] INFO  MyServer.MyServer - 一个连接
+2017-03-31 14:11:23,140 [68] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 14:14:07,336 [62] INFO  MyServer.MyServer - 一个连接
+2017-03-31 14:14:08,948 [67] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 14:16:49,350 [67] INFO  MyServer.MyServer - 一个连接
+2017-03-31 14:16:50,849 [62] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 14:18:38,866 [57] INFO  MyServer.MyServer - 一个连接
+2017-03-31 14:18:40,587 [68] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 14:19:51,808 [61] INFO  MyServer.MyServer - 一个连接
+2017-03-31 14:19:53,394 [57] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 14:22:19,326 [62] INFO  MyServer.MyServer - 一个连接
+2017-03-31 14:22:22,720 [67] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 14:22:32,895 [61] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0
+2017-03-31 14:22:37,797 [67] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 14:23:45,996 [62] INFO  MyServer.MyServer - 一个连接
+2017-03-31 14:23:47,607 [57] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 14:24:51,964 [62] INFO  MyServer.MyServer - 一个连接
+2017-03-31 14:24:54,838 [62] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 14:25:34,352 [67] INFO  MyServer.MyServer - 一个连接
+2017-03-31 14:25:36,586 [57] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 14:26:06,453 [62] INFO  MyServer.MyServer - 一个连接
+2017-03-31 14:26:08,976 [57] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 14:27:44,400 [57] INFO  MyServer.MyServer - 一个连接
+2017-03-31 14:27:48,565 [64] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 14:28:32,543 [68] INFO  MyServer.MyServer - 一个连接
+2017-03-31 14:28:34,885 [61] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 14:29:08,269 [64] INFO  MyServer.MyServer - 一个连接
+2017-03-31 14:29:10,480 [68] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 14:35:20,058 [62] INFO  MyServer.MyServer - 一个连接
+2017-03-31 14:35:22,314 [62] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 14:37:05,339 [64] INFO  MyServer.MyServer - 一个连接
+2017-03-31 14:37:08,095 [57] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 14:37:40,588 [67] INFO  MyServer.MyServer - 一个连接
+2017-03-31 14:37:42,132 [64] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 14:40:37,640 [64] INFO  MyServer.MyServer - 一个连接
+2017-03-31 14:40:39,594 [67] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 14:44:00,007 [57] INFO  MyServer.MyServer - 一个连接
+2017-03-31 14:44:01,763 [64] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 14:48:11,989 [64] INFO  MyServer.MyServer - 一个连接
+2017-03-31 14:48:16,464 [61] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 14:51:14,588 [67] INFO  MyServer.MyServer - 一个连接
+2017-03-31 14:51:16,495 [68] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 14:52:00,126 [57] INFO  MyServer.MyServer - 一个连接
+2017-03-31 14:52:02,683 [61] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 14:56:35,371 [67] INFO  MyServer.MyServer - 一个连接
+2017-03-31 14:56:37,181 [67] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 14:57:57,533 [57] INFO  MyServer.MyServer - 一个连接
+2017-03-31 14:57:59,385 [67] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 14:58:42,568 [57] INFO  MyServer.MyServer - 一个连接
+2017-03-31 14:58:44,317 [62] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 14:59:10,539 [61] INFO  MyServer.MyServer - 一个连接
+2017-03-31 14:59:12,933 [68] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 15:00:15,317 [67] INFO  MyServer.MyServer - 一个连接
+2017-03-31 15:00:17,328 [64] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 15:01:42,206 [64] INFO  MyServer.MyServer - 一个连接
+2017-03-31 15:01:44,153 [67] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 15:03:59,130 [61] INFO  MyServer.MyServer - 一个连接
+2017-03-31 15:04:01,027 [67] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 15:07:00,896 [62] INFO  MyServer.MyServer - 一个连接
+2017-03-31 15:07:02,507 [64] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 15:07:32,646 [57] INFO  MyServer.MyServer - 一个连接
+2017-03-31 15:07:34,290 [68] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 15:09:48,302 [64] INFO  MyServer.MyServer - 一个连接
+2017-03-31 15:09:50,160 [68] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 15:13:12,799 [61] INFO  MyServer.MyServer - 一个连接
+2017-03-31 15:13:14,983 [67] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 15:19:41,168 [68] INFO  MyServer.MyServer - 一个连接
+2017-03-31 15:19:42,748 [57] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 15:24:36,194 [61] INFO  MyServer.MyServer - 一个连接
+2017-03-31 15:24:37,774 [61] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 15:27:20,958 [67] INFO  MyServer.MyServer - 一个连接
+2017-03-31 15:27:22,615 [64] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 15:28:21,460 [61] INFO  MyServer.MyServer - 一个连接
+2017-03-31 15:28:23,437 [62] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 15:29:20,049 [64] INFO  MyServer.MyServer - 一个连接
+2017-03-31 15:29:21,712 [62] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 15:33:04,204 [62] INFO  MyServer.MyServer - 一个连接
+2017-03-31 15:33:05,848 [64] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 15:34:46,882 [64] INFO  MyServer.MyServer - 一个连接
+2017-03-31 15:34:48,860 [61] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 15:35:51,480 [57] INFO  MyServer.MyServer - 一个连接
+2017-03-31 15:35:53,616 [67] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 15:36:43,493 [64] INFO  MyServer.MyServer - 一个连接
+2017-03-31 15:36:46,543 [61] INFO  MyServer.MyServer - 一个连接
+2017-03-31 15:36:46,646 [68] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 15:36:56,273 [61] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 15:39:28,910 [64] INFO  MyServer.MyServer - 一个连接
+2017-03-31 15:39:30,487 [57] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 15:41:14,647 [64] INFO  MyServer.MyServer - 一个连接
+2017-03-31 15:41:17,650 [61] INFO  MyServer.MyServer - 一个连接
+2017-03-31 15:41:18,472 [64] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 15:41:52,718 [61] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 15:42:25,166 [57] INFO  MyServer.MyServer - 一个连接
+2017-03-31 15:42:26,635 [61] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 15:42:47,773 [67] INFO  MyServer.MyServer - 一个连接
+2017-03-31 15:42:49,675 [68] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 15:44:13,814 [67] INFO  MyServer.MyServer - 一个连接
+2017-03-31 15:44:20,920 [67] INFO  MyServer.MyServer - 一个连接
+2017-03-31 15:44:22,281 [62] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 15:44:29,010 [62] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 15:47:14,028 [68] INFO  MyServer.MyServer - 一个连接
+2017-03-31 15:47:17,741 [57] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 15:53:11,087 [64] INFO  MyServer.MyServer - 一个连接
+2017-03-31 15:53:12,731 [68] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 15:57:10,809 [64] INFO  MyServer.MyServer - 一个连接
+2017-03-31 15:57:13,285 [61] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 15:58:35,009 [57] INFO  MyServer.MyServer - 一个连接
+2017-03-31 15:58:36,714 [64] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 15:59:12,335 [61] INFO  MyServer.MyServer - 一个连接
+2017-03-31 15:59:14,487 [68] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1
+2017-03-31 15:59:51,807 [68] INFO  MyServer.MyServer - 一个连接
+2017-03-31 15:59:55,431 [61] INFO  NHibernate.Loader.Loader - SELECT this_.id as id1_0_0_, this_.username as userna2_0_0_, this_.password as passwo3_0_0_, this_.regdate as regdat4_0_0_ FROM users this_ WHERE this_.username = ?p0 and this_.password = ?p1

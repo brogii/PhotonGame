@@ -1,0 +1,10 @@
+E:\VSproject\PhotonServer服务端使用\MyServer\bin\Debug\MyServer.dll
+E:\VSproject\PhotonServer服务端使用\MyServer\bin\Debug\MyServer.pdb
+E:\VSproject\PhotonServer服务端使用\MyServer\obj\Debug\MyServer.dll
+E:\VSproject\PhotonServer服务端使用\MyServer\obj\Debug\MyServer.pdb
+E:\PhotonServer\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\MyServer\bin\MyServer.dll
+E:\PhotonServer\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\MyServer\bin\MyServer.pdb
+E:\PhotonServer\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\MyServer\bin\log4net.config
+E:\PhotonServer\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\MyServer\bin\MyServer.dll.config
+E:\PhotonServer\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\MyServer\bin\hibernate.cfg.xml
+E:\VSproject\PhotonServer服务端使用\MyServer\obj\Debug\MyServer.csprojResolveAssemblyReference.cache

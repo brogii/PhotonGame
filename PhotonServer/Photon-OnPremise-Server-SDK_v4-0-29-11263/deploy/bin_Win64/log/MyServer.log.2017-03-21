@@ -1,0 +1,38 @@
+2017-03-21 16:17:33,602 [1] INFO  Photon.SocketServer.ApplicationBase - Application is stopping: AppId=MyServer
+2017-03-21 16:17:34,280 [1] INFO  MyServer.MyServer - 服务器关闭
+2017-03-21 16:17:34,280 [1] INFO  Photon.SocketServer.ApplicationBase - Application stop: AppId=MyServer
+2017-03-21 18:03:21,189 [1] INFO  MyServer.MyServer - 服务器启动
+2017-03-21 18:03:21,617 [1] INFO  NHibernate.Cfg.Environment - NHibernate 4.1.1.GA (assembly 4.1.0.4000)
+2017-03-21 18:03:21,623 [1] INFO  NHibernate.Cfg.Environment - hibernate-configuration section not found in application configuration file
+2017-03-21 18:03:21,624 [1] INFO  NHibernate.Cfg.Environment - Bytecode provider name : lcg
+2017-03-21 18:03:21,625 [1] INFO  NHibernate.Cfg.Environment - Using reflection optimizer
+2017-03-21 18:03:21,855 [1] INFO  NHibernate.Cfg.Configuration - Searching for mapped documents in assembly: MyServer
+2017-03-21 18:03:21,857 [1] INFO  NHibernate.Cfg.Configuration - Mapping resource: MyServer.Mappings.User.hbm.xml
+2017-03-21 18:03:22,139 [1] INFO  NHibernate.Dialect.Dialect - Using dialect: NHibernate.Dialect.MySQL5Dialect
+2017-03-21 18:03:22,219 [1] INFO  NHibernate.Cfg.XmlHbmBinding.Binder - Mapping class: MyServer.Model.User -> users
+2017-03-21 18:03:22,325 [1] INFO  NHibernate.Cfg.Configuration - checking mappings queue
+2017-03-21 18:03:22,325 [1] INFO  NHibernate.Cfg.Configuration - processing one-to-many association mappings
+2017-03-21 18:03:22,325 [1] INFO  NHibernate.Cfg.Configuration - processing one-to-one association property references
+2017-03-21 18:03:22,325 [1] INFO  NHibernate.Cfg.Configuration - processing foreign key constraints
+2017-03-21 18:03:22,365 [1] INFO  NHibernate.Cfg.Configuration - processing filters (second pass)
+2017-03-21 18:03:22,482 [1] ERROR NHibernate.Util.ReflectHelper - Could not load type MyServer.Model.Data, MyServer.
+System.TypeLoadException: 未能从程序集“MyServer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null”中加载类型“MyServer.Model.Data”。
+   在 System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   在 System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   在 NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+2017-03-21 18:03:22,750 [1] ERROR Photon.SocketServer.ApplicationBase - NHibernate.MappingException: Could not determine type for: MyServer.Model.Data, MyServer, for columns: NHibernate.Mapping.Column(regdate)
+   在 NHibernate.Mapping.SimpleValue.get_Type()
+   在 NHibernate.Mapping.SimpleValue.IsValid(IMapping mapping)
+   在 NHibernate.Mapping.PersistentClass.Validate(IMapping mapping)
+   在 NHibernate.Mapping.RootClass.Validate(IMapping mapping)
+   在 NHibernate.Cfg.Configuration.ValidateEntities()
+   在 NHibernate.Cfg.Configuration.Validate()
+   在 NHibernate.Cfg.Configuration.BuildSessionFactory()
+   在 MyServer.NHibernateHelper.get_SessionFactory() 位置 E:\VSproject\PhotonServer服务端使用\MyServer\NHibernateHelper.cs:行号 20
+   在 MyServer.NHibernateHelper.OpenSession() 位置 E:\VSproject\PhotonServer服务端使用\MyServer\NHibernateHelper.cs:行号 28
+   在 MyServer.Manager.UserManager.GetById(Int32 id) 位置 E:\VSproject\PhotonServer服务端使用\MyServer\Manager\UserManager.cs:行号 34
+   在 MyServer.MyServer.Setup() 位置 E:\VSproject\PhotonServer服务端使用\MyServer\MyServer.cs:行号 43
+   在 Photon.SocketServer.ApplicationBase.PhotonHostRuntimeInterfaces.IPhotonControl.OnPhotonRunning() 位置 h:\svncontent\photon-socketserver-sdk_cloud\src\Photon.SocketServer\ApplicationBase.cs:行号 1171
+2017-03-21 18:03:22,963 [1] INFO  Photon.SocketServer.ApplicationBase - Application is stopping: AppId=MyServer
+2017-03-21 18:03:22,982 [1] INFO  MyServer.MyServer - 服务器关闭
+2017-03-21 18:03:22,982 [1] INFO  Photon.SocketServer.ApplicationBase - Application stop: AppId=MyServer

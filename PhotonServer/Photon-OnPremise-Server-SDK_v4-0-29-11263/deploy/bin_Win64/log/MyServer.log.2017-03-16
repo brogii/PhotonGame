@@ -1,0 +1,26 @@
+2017-03-16 09:35:14,225 [1] INFO  MyServer.MyServer - 服务器启动
+2017-03-16 09:35:14,235 [1] INFO  Photon.SocketServer.ApplicationBase - Application start: AppId=MyServer; AppPath=E:\PhotonServer\Photon-OnPremise-Server-SDK_v4-0-29-11263\deploy\MyServer, Type=MyServer.MyServer 
+2017-03-16 09:36:52,234 [13] INFO  MyServer.MyServer - 一个连接
+2017-03-16 09:37:26,670 [12] INFO  MyServer.MyServer - 一个连接
+2017-03-16 09:37:34,893 [15] ERROR ExitGames.Threading.FailSafeBatchExecutor - System.NotImplementedException: 未实现该方法或操作。
+   在 MyServer.MyClientPeer.OnDisconnect(DisconnectReason reasonCode, String reasonDetail) 位置 E:\VSproject\PhotonServer服务端使用\MyServer\MyClientPeer.cs:行号 18
+   在 Photon.SocketServer.PeerBase.OnApplicationDisconnect(DisconnectReason reasonCode, String reasonDetail, Int32 rtt, Int32 rttVariance, Int32 numFailures) 位置 h:\svncontent\photon-socketserver-sdk_cloud\src\Photon.SocketServer\PeerBase.cs:行号 1039
+   在 Photon.SocketServer.PeerBase.<>c__DisplayClass2.<Photon.SocketServer.IManagedPeer.Application_OnDisconnect>b__1() 位置 h:\svncontent\photon-socketserver-sdk_cloud\src\Photon.SocketServer\PeerBase.cs:行号 874
+   在 ExitGames.Threading.FailSafeBatchExecutor.Execute(Action action) 位置 c:\(Work)\(EG)\exitgames-libs\src\Core\Threading\FailSafeBatchExecutor.cs:行号 111
+2017-03-16 09:39:02,659 [13] ERROR ExitGames.Threading.FailSafeBatchExecutor - System.NotImplementedException: 未实现该方法或操作。
+   在 MyServer.MyClientPeer.OnDisconnect(DisconnectReason reasonCode, String reasonDetail) 位置 E:\VSproject\PhotonServer服务端使用\MyServer\MyClientPeer.cs:行号 18
+   在 Photon.SocketServer.PeerBase.OnApplicationDisconnect(DisconnectReason reasonCode, String reasonDetail, Int32 rtt, Int32 rttVariance, Int32 numFailures) 位置 h:\svncontent\photon-socketserver-sdk_cloud\src\Photon.SocketServer\PeerBase.cs:行号 1039
+   在 Photon.SocketServer.PeerBase.<>c__DisplayClass2.<Photon.SocketServer.IManagedPeer.Application_OnDisconnect>b__1() 位置 h:\svncontent\photon-socketserver-sdk_cloud\src\Photon.SocketServer\PeerBase.cs:行号 874
+   在 ExitGames.Threading.FailSafeBatchExecutor.Execute(Action action) 位置 c:\(Work)\(EG)\exitgames-libs\src\Core\Threading\FailSafeBatchExecutor.cs:行号 111
+2017-03-16 09:39:34,865 [11] INFO  MyServer.MyServer - 一个连接
+2017-03-16 09:40:10,995 [11] ERROR ExitGames.Threading.FailSafeBatchExecutor - System.NotImplementedException: 未实现该方法或操作。
+   在 MyServer.MyClientPeer.OnDisconnect(DisconnectReason reasonCode, String reasonDetail) 位置 E:\VSproject\PhotonServer服务端使用\MyServer\MyClientPeer.cs:行号 18
+   在 Photon.SocketServer.PeerBase.OnApplicationDisconnect(DisconnectReason reasonCode, String reasonDetail, Int32 rtt, Int32 rttVariance, Int32 numFailures) 位置 h:\svncontent\photon-socketserver-sdk_cloud\src\Photon.SocketServer\PeerBase.cs:行号 1039
+   在 Photon.SocketServer.PeerBase.<>c__DisplayClass2.<Photon.SocketServer.IManagedPeer.Application_OnDisconnect>b__1() 位置 h:\svncontent\photon-socketserver-sdk_cloud\src\Photon.SocketServer\PeerBase.cs:行号 874
+   在 ExitGames.Threading.FailSafeBatchExecutor.Execute(Action action) 位置 c:\(Work)\(EG)\exitgames-libs\src\Core\Threading\FailSafeBatchExecutor.cs:行号 111
+2017-03-16 09:40:13,175 [13] INFO  MyServer.MyServer - 一个连接
+2017-03-16 09:40:44,695 [14] ERROR ExitGames.Threading.FailSafeBatchExecutor - System.NotImplementedException: 未实现该方法或操作。
+   在 MyServer.MyClientPeer.OnDisconnect(DisconnectReason reasonCode, String reasonDetail) 位置 E:\VSproject\PhotonServer服务端使用\MyServer\MyClientPeer.cs:行号 18
+   在 Photon.SocketServer.PeerBase.OnApplicationDisconnect(DisconnectReason reasonCode, String reasonDetail, Int32 rtt, Int32 rttVariance, Int32 numFailures) 位置 h:\svncontent\photon-socketserver-sdk_cloud\src\Photon.SocketServer\PeerBase.cs:行号 1039
+   在 Photon.SocketServer.PeerBase.<>c__DisplayClass2.<Photon.SocketServer.IManagedPeer.Application_OnDisconnect>b__1() 位置 h:\svncontent\photon-socketserver-sdk_cloud\src\Photon.SocketServer\PeerBase.cs:行号 874
+   在 ExitGames.Threading.FailSafeBatchExecutor.Execute(Action action) 位置 c:\(Work)\(EG)\exitgames-libs\src\Core\Threading\FailSafeBatchExecutor.cs:行号 111
